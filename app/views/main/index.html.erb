@@ -4,4 +4,7 @@
   <% if @user %>
     Logeed in as: <%= @user.email %>
   <% end %> 
+
+  <%= button_to "Logout", logout_path, method: :delete %>
+
 </div>
